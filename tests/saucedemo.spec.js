@@ -13,7 +13,7 @@ test('@smoke Add to cart test', async ({ app }) => {
   await app.addProductToCart();
 
   // optional validation (URL contains cart)
-  await expect(app.page.locator('.shopping_cart_badge')).toHaveText('1');
+  await expect(app.page.locator('.shopping_cart_badge')).toHaveText('555');
 });
 
 
